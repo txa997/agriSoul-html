@@ -1,0 +1,137 @@
+/* 
+    about-1-start
+*/
+
+.as-about-1 {
+    &-wrap {
+        display: grid;
+        gap: 60px;
+        grid-template-columns: 1.43fr 1.43fr 1fr;
+        align-items: center;
+
+        @media #{$xl} {
+            gap: 50px 30px;
+        }
+        @media #{$lg,$md,$xs} {
+            gap: 50px 30px;
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &-img {
+        height: 556px;
+        border-radius: 24px;
+
+        @media #{$xs} {
+            height: 400px;
+        }
+        @media #{$sm} {
+            height: 450px;
+        }
+    }
+
+    &-content {
+        margin-left: 40px;
+
+        @media #{$xl,$lg,$md,$xs} {
+            margin-left: 0px;
+        }
+
+        .as-sec-title-1 {
+            margin-bottom: 20px;
+        }
+
+        .sec-disc {
+            margin-bottom: 40px;
+        }
+
+
+        .inner-div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    &-author {
+        display: inline-flex;
+
+        div {
+            &:not(:first-child) {
+                margin-left: -20px;
+            }
+        }
+
+        .img-elm {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+
+        }
+
+        .plus-icon {
+            display: inline-flex;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            background: var(--as-clr-sd-1);
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            color: var(--as-clr-pr-1);
+        }
+    }
+    
+    
+    
+    &-counter {
+        .disc {
+            font-weight: 500;
+        }
+
+        .number {
+            font-size: 40px;
+            font-weight: 800;
+            color: var(--as-clr-h-2);
+            line-height: 80%;
+            margin-bottom: 6px;
+        }
+    }
+
+
+    &-features {
+        &-item {
+            padding: 32px 0;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #EAEAEA;
+            }
+
+            .icon {
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 24px;
+                margin-bottom: 12px;
+
+                @media #{$xl,$lg,$md,$xs} {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+/* 
+    about-1-end
+*/

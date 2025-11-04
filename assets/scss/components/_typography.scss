@@ -1,0 +1,75 @@
+/*
+    03. typography
+*/
+
+/* 
+    typography-start
+*/
+
+.as-p-1 {
+    font-family: var(--as-font-2);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--as-clr-p-1);
+    line-height: 140%;
+    margin-bottom: 0;
+}
+
+.as-p-2 {
+    font-family: var(--as-font-1);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--as-clr-p-1);
+    line-height: 140%;
+    margin-bottom: 0;
+}
+
+.as-h-1 {
+    font-family: var(--as-font-2);
+    font-weight: 700;
+    color: var(--as-clr-h-1);
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+
+.as-subtitle-1 {
+    font-family: var(--as-font-2);
+    font-weight: 600;
+    color: var(--as-clr-pr-1);
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+
+.as-sec-title-1 {
+    font-family: var(--as-font-2);
+    font-weight: 700;
+    color: var(--as-clr-h-2);
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 0;
+
+    @media #{$xl} {
+        font-size: 45px;
+    }
+    @media #{$lg} {
+        font-size: 40px;
+    }
+    @media #{$md} {
+        font-size: 35px;
+    }
+    @media #{$xs} {
+        font-size: 30px;
+    }
+    @media #{$sm} {
+        font-size: 32px;
+    }
+}
+
+
+
+/* 
+    typography-end
+*/

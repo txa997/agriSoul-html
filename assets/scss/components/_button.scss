@@ -1,0 +1,122 @@
+/*
+    05. button
+*/
+
+
+/* 
+    button-start
+*/
+.as-offcanvas-btn-1 {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--as-clr-pr-1);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 26px;
+}
+
+
+
+
+.as-cart-btn-1 {
+    background-color: var(--as-clr-pr-1);
+    color: #fff;
+    border-radius: 100px;
+    letter-spacing: -0.05em;
+    padding: 11px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    i {
+        font-size: 22px;
+    }
+}
+
+.as-user-btn-1 {
+    display: inline-flex;
+    flex: 0 0 auto;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(95, 95, 95, 0.5);
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+}
+.as-save-btn-1 {
+    display: inline-flex;
+    flex: 0 0 auto;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(95, 95, 95, 0.5);
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+}
+
+
+.as-phone-btn-1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+
+    .icon {
+        width: 52px;
+        height: 52px;
+        background: var(--as-clr-pr-1);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        font-size: 25px;
+    }
+}
+
+
+.as-slider-btn-1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #EDF2EC;
+    font-size: 24px;
+    color: #000;
+}
+
+
+.as-pr-btn-1 {
+    font-family: var(--as-font-1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    background: var(--as-clr-pr-1);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    padding: 14px 26px;
+
+    .icon {
+        font-size: 22px;
+    }
+}
+
+
+/* 
+    button-end
+*/
