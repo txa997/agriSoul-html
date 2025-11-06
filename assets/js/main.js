@@ -289,6 +289,27 @@ gsap.utils.toArray(".wa_parallax_img").forEach(element => {
 
 
 /* 
+	testimonial-1-slider-function
+*/
+if ($('.as_t1_slider').length) {
+	var as_t1_slider = new Swiper(".as_t1_slider", {
+		loop: true,
+		speed: 600,
+		spaceBetween: 25,
+		slidesPerView: 1,
+
+
+		pagination: {
+			el: ".as_t1_slider_pagi",
+			clickable: true,
+		},
+
+	});
+
+}
+
+
+/* 
     marquee-right
 */
 

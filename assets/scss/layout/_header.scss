@@ -210,7 +210,7 @@
                 padding: 16px 0;
                 display: inline-flex;
                 align-items: center;
-                transition: all .5s var(--as-cube-1);
+                transition: all .5s var(--as-cube-2);
             }
 
             &:is(.dropdown) {
@@ -270,7 +270,7 @@
                 visibility: hidden;
                 transform: scaleY(0);
                 transform-origin: top;
-                transition: all .5s var(--as-cube-1);
+                transition: all .5s var(--as-cube-2);
             
                 li {
                     display: block;

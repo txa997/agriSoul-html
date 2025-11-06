@@ -31,9 +31,15 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    transition: var(--as-cube-2);
+   
 
     i {
         font-size: 22px;
+    }
+
+    &:hover {
+        transform: translateX(5px);
     }
 }
 

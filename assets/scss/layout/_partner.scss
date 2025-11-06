@@ -1,0 +1,89 @@
+
+/* 
+    partner-1-start
+*/
+.as-partner-1 {
+    &-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        font-size: 32px;
+        margin-bottom: 72px;
+
+        .line {
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(45deg, #00000000, #EDF2EC);
+
+            &:nth-of-type(3) {
+                background: linear-gradient(-45deg, #00000000, #EDF2EC);
+            }
+        }
+
+        .text {
+            flex: 0 0 auto;
+
+            @media #{$xs} {
+                width: 100%;
+            }
+        }
+
+        .odometer {
+            font-size: 48px;
+        }
+    }
+
+    &-logo {
+        display: flex;
+        gap: 80px;
+        margin-right: 80px;
+
+        .single-logo {
+            flex: 0 0 auto;
+        }
+    }
+
+    &-marquee {
+        &::after {
+            content: "";
+            height: 100%;
+            width: 358px;
+            background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 24.95%, rgba(255, 255, 255, 0.9) 49.96%, #FFFFFF 74.57%, #FFFFFF 100%);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+
+            @media #{$xs} {
+                width: 50px;
+            }
+            @media #{$sm} {
+                width: 120px;
+            }
+        }
+        &::before {
+            content: "";
+            height: 100%;
+            width: 358px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 24.95%, rgba(255, 255, 255, 0.9) 49.96%, #FFFFFF 74.57%, #FFFFFF 100%);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+
+            @media #{$xs} {
+                width: 50px;
+            }
+            @media #{$sm} {
+                width: 120px;
+            }
+        }
+    }
+    
+}
+
+
+/* 
+    partner-1-end
+*/
