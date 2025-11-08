@@ -26,65 +26,27 @@
 		flex-direction: column;
 		gap: 50px;
 
-			.loader {
-				color: var(--as-clr-pr-1);
-				transition: .5s;
-			}
-
-			.loader_letter {
-				text-transform: uppercase;
-				padding: 0 .2em;
-				font-size: 1.5em;
-				line-height: 1;
-				position: relative;
-				display: inline-block;
-				animation: bounce 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
-			}
-
-
-			
-			.loader_letter:nth-child(1) {
-				animation-delay: 0s;
-			}
-			.loader_letter:nth-child(2) {
-				animation-delay: 0.05s;
-			}
-			.loader_letter:nth-child(3) {
-				animation-delay: 0.1s;
-			}
-			.loader_letter:nth-child(4) {
-				animation-delay: 0.15s;
-			}
-			.loader_letter:nth-child(5) {
-				animation-delay: 0.2s;
-			}
-			.loader_letter:nth-child(6) {
-				animation-delay: 0.25s;
-			}
-			.loader_letter:nth-child(7) {
-				animation-delay: 0.3s;
-			}
-			.loader_letter:nth-child(8) {
-				animation-delay: 0.35s;
-			}
-			.loader_letter:nth-child(9) {
-				animation-delay: 0.4s;
-			}
-			.loader_letter:nth-child(10) {
-				animation-delay: 0.45s;
-			}
-			
-			@keyframes bounce {
-				0% {
-				transform: translateY(0px);
-				}
-				100% {
-				transform: translateY(-1em);
-				}
-			}
+		
 
 	}
 
+	&-svg {
+		transition: .3s;
+		.path-1 {
+			animation: asPreloader1kf 4s linear infinite;
+			transform-origin: 50% 38%;
+		}
+		.path-2 {
+			animation: asPreloader1kf 4s linear infinite;
+		    transform-origin: 50% 50%;
+			animation-delay: 2.5s;
+		}
+		.path-3 {
+			animation: asPreloader1kf 4s linear infinite;
+			transform-origin: 40% 50%;
+			animation-delay: 1.5s;
+		}
+	}
 
 
 	&.loaded {
@@ -92,7 +54,7 @@
 		visibility: hidden;
 		pointer-events: none;
 
-		.loader {
+		.as-preloader-svg {
 			transform: translateY(-100px);
 		}
 	}
@@ -105,3 +67,16 @@
 	preloader-css-end
 */
 
+
+  
+@keyframes asPreloader1kf {
+	0%   {     
+		transform: rotate(18deg); 
+	}	
+	50%   {     
+		transform: rotate(-18deg); 
+	}
+	100%   {     
+		transform: rotate(18deg); 
+	}
+}

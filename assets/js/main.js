@@ -461,16 +461,18 @@ gsap.utils.toArray(".wa_zoomOut_img").forEach(wa_zoomOut_img => {
 
 
 // services-1-bg-img-animation
-var asServices1bgImg = gsap.timeline({
-	scrollTrigger: {
-		trigger: ".as-services-1-bg-img",
-		toggleActions: "play none none reverse",
-		start: "top 90%",
-		end: "top 20%",
-		scrub: true,
-		markers: false,
-	}
-})
+if (window.matchMedia("(min-width: 1200px)").matches) { 
+	var asServices1bgImg = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".as-services-1-bg-img",
+			toggleActions: "play none none reverse",
+			start: "top 90%",
+			end: "top 20%",
+			scrub: true,
+			markers: false,
+		}
+	})
+}
 
 asServices1bgImg.from(".as-services-1-bg-img img", {
 	yPercent: -100,
