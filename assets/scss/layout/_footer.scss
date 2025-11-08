@@ -48,6 +48,7 @@
             position: relative;
             z-index: 1;
             gap: 30px;
+            will-change: width, max-width;
 
             .form-input {
                 width: 100%;
@@ -212,14 +213,25 @@
         left: 0;
         width: 100%;
         z-index: -1;
-        color: #fff;
+        color: #EDDD5E;
         font-size: 360px;
         line-height: 1;
         font-weight: 800;
         letter-spacing: -0.07em;
-        background: linear-gradient(180deg, rgba(237, 221, 94, 0.2) -0.1%, rgba(10, 40, 3, 0.2) 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // background: linear-gradient(180deg, rgba(237, 221, 94, 0.2) -0.1%, rgba(10, 40, 3, 0.2) 100%);
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        opacity: .15;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #00000000, #0A2803);
+        }
     
         @media #{$xxxl} {
             font-size: 290px;

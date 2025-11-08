@@ -79,6 +79,14 @@
                 opacity: 80%;
             }
             
+
+            &:hover {
+                .icon {
+                    i {
+                        animation: bounceIn 1s;
+                    }
+                }
+            }
         }
     }
 
@@ -116,6 +124,12 @@
                 border-radius: 12px;
                 color: #fff;
                 font-size: 24px;
+                transition: var(--as-cube-1);
+
+                &:hover {
+                    background-color: #fff;
+                    color: var(--as-clr-pr-1);
+                }
             }
         }
     }
@@ -173,6 +187,12 @@
             color: #fff;
             border-radius: 8px;
             font-weight: 600;
+            transition: var(--as-cube-1);
+
+            &:hover {
+                color: var(--as-clr-sd-1);
+                transform: scale(97%);
+            }
         }
 
 

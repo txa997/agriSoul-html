@@ -68,7 +68,13 @@
     }
 }
 
-
+.wa_split_1 {
+    .split-line {
+        > div {
+            will-change: transform, scale;
+        }
+    }
+}
 
 /* 
     typography-end

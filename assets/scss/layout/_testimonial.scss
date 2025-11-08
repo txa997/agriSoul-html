@@ -166,6 +166,42 @@
                 margin: 0 !important;
             }
         }
+
+
+        .swiper-wrapper {
+            .swiper-slide {
+                &:is(.swiper-slide-active) {
+                    .as-testimonial-1-slider-item {
+                        .rating-star {
+                            i {
+                                animation: fadeIn .5s backwards;
+                                animation-delay: .3s;
+                                &:nth-child(2) {
+                                    animation-delay: .4s;
+                                }
+                                &:nth-child(3) {
+                                    animation-delay: .5s;
+                                }
+                                &:nth-child(4) {
+                                    animation-delay: .6s;
+                                }
+                                &:nth-child(5) {
+                                    animation-delay: .7s;
+                                }
+                            }
+                        }
+                        .comment, .author {
+                            animation: fadeInUp2 .3s backwards;
+                            animation-delay: .4s;
+                        }
+
+                        .author {
+                            animation-delay: .5s;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 

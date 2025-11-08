@@ -45,7 +45,7 @@
                 display: flex;
                 align-items: center;
                 gap: 6px;
-
+                transition: var(--as-cube-2);
 
                 .icon {
                     width: 44px;
@@ -57,6 +57,15 @@
                     border-radius: 50%;
                     font-size: 20px;
                     flex:  0 0 auto;
+                    transition: var(--as-cube-2);
+                }
+
+                &:hover {
+                    color: var(--as-clr-pr-1);
+                    .icon {
+                        color: #fff;
+                        background: var(--as-clr-pr-1);
+                    }
                 }
             }
         }
@@ -116,6 +125,12 @@
                 position: absolute;
                 right: 5px;
                 top: 4px;
+                transition: var(--as-cube-2);
+
+                &:hover {
+                    color: var(--as-clr-pr-1);
+                    background: var(--as-clr-sd-1);
+                }
             }
         }
 
@@ -210,7 +225,7 @@
                 padding: 16px 0;
                 display: inline-flex;
                 align-items: center;
-                transition: all .5s var(--as-cube-2);
+                transition: var(--as-cube-2);
             }
 
             &:is(.dropdown) {
@@ -242,7 +257,7 @@
                     transform: scaleY(1);
 
                     li {
-                        animation: fadeInDown .3s var(--as-cube-1) backwards;
+                        animation: fadeInDown .2s var(--as-cube-1) backwards;
 
                         @for $i from 1 through 20 {
                             &:nth-child(#{$i}) {
@@ -270,7 +285,7 @@
                 visibility: hidden;
                 transform: scaleY(0);
                 transform-origin: top;
-                transition: all .5s var(--as-cube-2);
+                transition: var(--as-cube-1);
             
                 li {
                     display: block;
@@ -281,7 +296,6 @@
                     }
 
                     a {
-                        font-weight: 400;
                         width: 100%;
                         display: block;
                         padding: 9px 20px;

@@ -38,7 +38,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                opacity: 20%;
+                opacity: 40%;
             }
         }
 
@@ -105,6 +105,73 @@
     }
 
     &-slider {
+
+
+        .swiper-wrapper {
+            .swiper-slide {
+                .as-hero-1-item .bg-img {
+                    img {
+                        animation: h1-img-slide 1s;
+                    }
+                }
+
+                .as-hero-1-item-content {
+                    .hero-title, .hero-disc , .hero-btn {
+                        animation: h1-img-slide 1s;
+                    }
+                }
+
+                &:is(.swiper-slide-active) {
+                    .as-hero-1-item .bg-img {
+                        img {
+                            animation: h1-img-slide-2 1s backwards;
+                     
+                        }
+                    }
+
+                    .as-hero-1-item-content {
+                        .hero-title, .hero-disc , .hero-btn {
+                            animation: h1-img-slide-2-text .7s backwards;
+                            
+                        }
+                        .hero-title {
+                            animation-delay: .7s;
+                        }
+                        .hero-disc {
+                            animation-delay: .9s;
+                        }
+                        .hero-btn {
+                            animation-delay: 1.1s;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        @keyframes h1-img-slide {
+            to {
+                transform: translateY(-50%) scale(1.2);
+                filter: blur(10px);
+            }
+        }
+        
+        @keyframes h1-img-slide-2 {
+            from {
+                transform: translateY(50%) scale(1.2);
+                filter: blur(10px);
+            }
+        }        
+        @keyframes h1-img-slide-2-text {
+            from {
+                transform: translateY(50%) scale(1.2);
+                filter: blur(10px);
+                opacity: 0;
+            }
+        }
+        
+
+
         &-btn {
             &-left {
                 position: absolute;
