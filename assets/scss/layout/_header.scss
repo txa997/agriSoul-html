@@ -391,6 +391,14 @@
             border-radius: 12px;
             background: var(--as-clr-sd-1);
             color: var(--as-clr-pr-1);
+
+            &:hover {
+                background-color: var(--as-clr-h-3);
+                color: #fff;
+                i {
+                    transform: scale(110%);
+                }
+            }
         }
     }
 }

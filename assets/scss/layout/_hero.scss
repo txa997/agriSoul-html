@@ -313,6 +313,18 @@
             color: var(--as-clr-h-3);
             position: absolute;
             outline: 8px solid rgb(255 255 255 / 30%);
+            transition: var(--as-cube-1);
+        }
+
+        .circle-text {
+            animation: wa-rotated 10s linear infinite;
+        }
+
+        &:hover {
+            .arrow-icon {
+                background-color: var(--as-clr-h-3);
+                color: #fff;
+            }
         }
     }
 

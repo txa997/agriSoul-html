@@ -237,7 +237,7 @@
         }
 
         &:is(.has-bg-2) {
-            background: #39251A;
+            background-color: var(--as-clr-h-3);
 
             .title {
                 color: #fff;
