@@ -1,35 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
+  scroll-behavior: inherit;
 
-    scroll-behavior: inherit;
-	
-	--as-font-1: "Albert Sans", sans-serif;
-	--as-font-2: "Nunito", sans-serif;
+  --as-font-1: "Albert Sans", sans-serif;
+  --as-font-2: "Nunito", sans-serif;
 
+  --as-clr-pr-1: #244f0b;
 
+  --as-clr-sd-1: #eddd5e;
 
-	--as-clr-pr-1: #244F0B;
-	
-	--as-clr-sd-1: #EDDD5E;
+  --as-clr-h-1: #0a2803;
+  --as-clr-h-2: #1c1c1d;
+  --as-clr-h-3: #39251A;
 
+  --as-clr-p-1: #5f5f5f;
 
-	--as-clr-h-1: #0A2803;
-	--as-clr-h-2: #1C1C1D;
-
-	--as-clr-p-1: #5F5F5F;
-
-
-	--as-cube-1: cubic-bezier(0.26, 1.22, 0.63, 1.05) .35s;
-	--as-cube-2: all .25s cubic-bezier(.645, .045, .355, 1);
+  --as-cube-1: cubic-bezier(0.26, 1.22, 0.63, 1.05) 0.35s;
+  --as-cube-2: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-$over:'(min-width: 1800px)';
-$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1799px)';
-$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
-$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
-$lg: 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$md:'only screen and (min-width: 768px) and (max-width: 991px)';
-$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
-$xs:'(max-width: 767px)';
+$over: "(min-width: 1800px)";
+$xxxl: "only screen and (min-width: 1600px) and (max-width: 1799px)";
+$xxl: "only screen and (min-width: 1400px) and (max-width: 1599px)";
+$xl: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+$xs: "(max-width: 767px)";

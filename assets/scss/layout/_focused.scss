@@ -137,3 +137,158 @@
 /* 
     focused-1-end
 */
+/* 
+    focused-2-start
+*/
+
+.as-focused-2 {
+    &-area {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1.23fr;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr;       
+        }
+    }
+
+
+    &-content {
+        background-color: #39251A;
+        padding: 48px 48px;
+        position: relative;
+        overflow: hidden;
+
+        @media #{$xxl,$xl,$lg} {
+            padding: 48px 20px;            
+        }
+
+        @media #{$md,$xs} {
+            padding: 48px 20px;     
+            padding-top: 120px;       
+        }
+
+
+        &-left {
+            max-width: 392px;
+        }
+
+
+        .content-title {
+            color: #fff;
+            letter-spacing: -0.01em;
+            font-size: 32px;
+            margin-bottom: 17px;
+
+            @media #{$xxl,$xl,$lg,$md,$xs} {
+                font-size: 22px;      
+            }
+
+        }
+
+        .content-disc {
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 65px;
+        }
+
+        .as-text-btn-1 {
+            color: #fff;
+            &:hover {
+                color: var(--as-clr-sd-1);
+            }
+        }
+    }
+
+    &-rating {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 45px;
+
+
+        &-number {
+            color: #fff;
+            font-size: 32px;
+            margin-bottom: 5px;
+            line-height: 90%;
+        }
+
+        .rating-star {
+            font-size: 17px;
+            color: var(--as-clr-sd-1);
+        }
+    }
+
+    &-img {
+        width: 52%;
+        position: absolute;
+        right: -15%;
+        bottom: -26%;
+    }
+
+
+    &-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;   
+        }
+
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;   
+        }
+
+        &-single {
+            background: #FEF4DB;
+            padding: 48px 48px;
+                
+            @media #{$xxl,$xl,$lg,$md,$xs} {
+                padding: 48px 20px;            
+            }
+
+            .main-icon {
+                margin-bottom: 48px;
+            }
+
+            .title {
+                font-size: 32px;
+                letter-spacing: -0.01em;
+                margin-bottom: 16px;
+
+                @media #{$xxl,$xl,$lg,$md,$xs} {
+                    font-size: 22px;            
+                }
+
+            }
+
+            .disc {
+                margin-bottom: 40px;
+            }
+
+
+            &:last-child {
+                text-align: right;
+                background-color: var(--as-clr-sd-1);
+
+                .disc {
+                    color: var(--as-clr-h-2);
+                }
+            }
+        }
+    }
+
+
+
+
+}
+/* 
+    focused-2-end
+*/

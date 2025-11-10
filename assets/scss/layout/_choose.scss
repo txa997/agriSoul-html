@@ -137,3 +137,117 @@
 /* 
     choose-1-end
 */
+/* 
+    choose-2-start
+*/
+
+.as-choose-2 {
+    &-wrap {
+        display: grid;
+        gap: 75px;
+        grid-template-columns: 1fr 1.076fr;
+        align-items: center;
+
+        @media #{$md,$xs} {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+    }
+
+    &-img {
+        height: 540px;
+        border-radius: 24px;
+
+        @media #{$xs} {
+            height: 400px;            
+        }
+        @media #{$sm} {
+            height: 500px;            
+        }
+    }
+
+    &-features {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 1fr 1fr;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;       
+        }
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;         
+        }
+
+        &-single {
+            .icon {
+                margin-bottom: 25px;
+            }
+
+            .title {
+                font-size: 24px;
+                margin-bottom: 12px;
+
+                @media #{$xxl,$xl,$lg,$md,$xs} {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+
+    &-card {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media #{$md} {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media #{$xs} {
+            grid-template-columns: 1fr ;
+        }
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-single {
+            border: 1px solid #EDF2EC;
+            border-radius: 12px;
+            padding: 32px 32px;
+
+            @media #{$lg,$md,$xs} {
+                padding: 32px 20px;
+            }
+
+            .icon {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #FFF9E8;
+                border-radius: 12px;
+                margin-bottom: 40px;
+            }
+
+            .title {
+                font-size: 24px;
+                letter-spacing: -0.01em;
+                margin-bottom: 16px;
+
+                @media #{$xxl,$xl,$lg,$md,$xs} {
+                    font-size: 22px;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+
+/* 
+    choose-2-end
+*/

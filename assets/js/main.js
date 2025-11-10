@@ -461,18 +461,16 @@ gsap.utils.toArray(".wa_zoomOut_img").forEach(wa_zoomOut_img => {
 
 
 // services-1-bg-img-animation
-if (window.matchMedia("(min-width: 1200px)").matches) { 
-	var asServices1bgImg = gsap.timeline({
-		scrollTrigger: {
-			trigger: ".as-services-1-bg-img",
-			toggleActions: "play none none reverse",
-			start: "top 90%",
-			end: "top 20%",
-			scrub: true,
-			markers: false,
-		}
-	})
-}
+var asServices1bgImg = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".as-services-1-bg-img",
+		toggleActions: "play none none reverse",
+		start: "top 90%",
+		end: "top 20%",
+		scrub: true,
+		markers: false,
+	}
+})
 
 asServices1bgImg.from(".as-services-1-bg-img img", {
 	yPercent: -100,
@@ -480,19 +478,24 @@ asServices1bgImg.from(".as-services-1-bg-img img", {
 
 
 // footer-1-newsletter-animation
-var asf1newsletter = gsap.timeline({
-	scrollTrigger: {
-		trigger: ".as-footer-1-newsletter-form",
-		toggleActions: "play none none reverse",
-		start: "top 90%",
-		end: "top 20%",
-		markers: false,
-	}
-})
+if (window.matchMedia("(min-width: 1200px)").matches) { 
+	var asf1newsletter = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".as-footer-1-newsletter-form",
+			toggleActions: "play none none reverse",
+			start: "top 90%",
+			end: "top 20%",
+			markers: false,
+		}
+	})
+	
+	asf1newsletter.from(".as-footer-1-newsletter-form", {
+		maxWidth: "25%",
+	})
+}
 
-asf1newsletter.from(".as-footer-1-newsletter-form", {
-	maxWidth: "25%",
-})
+
+
 
 
 /* 

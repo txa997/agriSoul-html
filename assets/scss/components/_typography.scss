@@ -33,6 +33,14 @@
 }
 
 
+.as-h-2 {
+    font-family: var(--as-font-2);
+    font-weight: 700;
+    color: var(--as-clr-h-3);
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
 .as-subtitle-1 {
     font-family: var(--as-font-2);
     font-weight: 600;
@@ -41,6 +49,10 @@
     letter-spacing: -0.05em;
     line-height: 140%;
     margin-bottom: 16px;
+
+    &:is(.has-v2) {
+        color: var(--as-clr-h-3);
+    }
 }
 
 .as-sec-title-1 {
@@ -65,6 +77,11 @@
     }
     @media #{$sm} {
         font-size: 32px;
+    }
+
+
+    &:is(.has-v2) {
+        color: var(--as-clr-h-3);
     }
 }
 

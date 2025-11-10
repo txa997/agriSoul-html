@@ -215,3 +215,110 @@
 /* 
     hero-1-end
 */
+
+
+
+/* 
+    hero-2-start
+*/
+.as-hero-2 {
+    &-content {
+        margin-top: 200px;
+
+        @media #{$md,$xs} {
+            margin-top: 100px;
+        }
+
+        .hero-title {
+            font-size: 72px;
+            font-weight: 800;
+            line-height: 115%;
+            margin-bottom: 12px;
+            letter-spacing: -0.03em;
+
+
+            @media #{$xxl} {
+                font-size: 65px;
+            }
+            
+            @media #{$xl} {
+                font-size: 60px;
+            }
+            
+            @media #{$lg} {
+                font-size: 55px;
+            }
+            
+            @media #{$md} {
+                font-size: 50px;
+            }
+
+            
+            @media #{$xs} {
+                font-size: 40px;
+            }
+            
+            @media #{$sm} {
+                font-size: 45px;
+            }
+        }
+
+        .hero-disc {
+            max-width: 570px;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .hero-btn {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-img {
+        height: 800px;
+
+        @media #{$xs} {
+            height: 400px;
+        }
+        @media #{$sm} {
+            height: 550px;
+        }
+    }
+
+
+    &-explore {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #EDDD5E;
+        border-radius: 50%;
+        outline: 18px solid #FEF4DB;
+        padding: 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        .arrow-icon {
+            display: inline-flex;
+            width: 74px;
+            height: 74px;
+            background: #fff;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: var(--as-clr-h-3);
+            position: absolute;
+            outline: 8px solid rgb(255 255 255 / 30%);
+        }
+    }
+
+}
+
+
+/* 
+    hero-2-end
+*/
