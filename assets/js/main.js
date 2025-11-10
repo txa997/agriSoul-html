@@ -496,8 +496,6 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
 
 
 
-
-
 /* 
 	testimonial-1-slider-function
 */
@@ -517,6 +515,33 @@ if ($('.as_t1_slider').length) {
 		autoplay: {
 			delay: 5000,
 		},
+
+	});
+
+}
+
+/* 
+	products-2-slider-function
+*/
+if ($('.as_p2_slider').length) {
+	var as_p2_slider = new Swiper(".as_p2_slider", {
+		loop: true,
+		speed: 400,
+		spaceBetween: 24,
+		slidesPerView: "auto",
+
+		scrollbar: {
+			el: ".as_p2_slider_scrollbar",
+		},
+
+		navigation: {
+			nextEl: ".as_p2_slider_next",
+			prevEl: ".as_p2_slider_prev",
+		},
+
+		// autoplay: {
+		// 	delay: 5000,
+		// },
 
 	});
 
