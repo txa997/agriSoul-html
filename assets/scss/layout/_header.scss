@@ -352,32 +352,19 @@
 /* 
     header-2-start
 */
-.header-x-hero {
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    gap: 40px;
-    grid-template-columns: 1fr 1.43fr;
-    padding-left: 80px;  
-
-    @media #{$xl,$lg,} {
-        padding-left: 30px;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    @media #{$md,$xs} {
-        padding-left: 20px;
-        padding-right: 20px;
-        grid-template-columns: 1fr ;
-    }
-    &-left {
-        padding-top: 24px;
-    }
-}
 
 .as-header-2 {
     &-area {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        padding-left: 80px;
+    }
+    &-wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -335,3 +335,15 @@
 /* 
     footer-1-end
 */
+
+/* 
+    footer-2-start
+*/
+.as-footer-1-area {
+    &:is(.has-footer-2) {
+        background-color: #25170F;
+    }
+}
+/* 
+    footer-2-end
+*/

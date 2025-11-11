@@ -1,0 +1,143 @@
+/* 
+    faqs-2-start
+*/
+
+.as-accordion-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+
+    &-item {
+        border-radius: 12px;
+        width: 100%;
+        border: 1px solid rgb(57 37 26 / 10%);
+        transition: 0.3s;
+
+        .item-title {
+            font-size: 24px;
+            font-weight: 600;
+            background: transparent;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+            padding: 20px 20px;
+            text-align: left;
+            transition: 0.2s;
+
+            @media #{$lg,$md,$xs} {
+                padding: 22px 15px;
+                font-size: 22px;
+            }
+
+
+            .icon {
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgb(57 37 26 / 20%);
+                border-radius: 50%;
+                color: var(--as-clr-h-3);
+                font-size: 18px;
+                transition: .3s;
+                flex: 0 0 auto;
+            }
+            
+    
+            &:is(:not(.collapsed)) {
+                .icon {
+                    border: 1px solid rgb(57 37 26 / 100%);
+                    transform: rotate(-180deg);
+                }
+
+            }
+
+            &:is(.collapsed) {
+                &:hover {
+                    color: var(--sr-clr-pr-1);
+                }
+            }
+
+
+
+        }
+        
+        .item-disc {
+            padding: 20px 20px;
+            padding-top: 0;
+            max-width: 660px;
+        }
+
+        &:hover {
+            border-color: rgb(57 37 26 / 100%);
+        }
+
+        &:is(.active) {
+            border-color: rgb(57 37 26 / 100%);
+        }
+
+    }
+    
+}
+
+
+.as-faqs-2 {
+    &-area {
+
+
+        &::after {
+            content: "";
+            background-color: #FEF4DB;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 130%;
+            z-index: -1;
+        }
+    }
+
+    &-sec-title {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 108px;
+        align-items: center;
+
+        @media #{$xxl,$xl,$lg} {
+            gap: 50px;
+        }
+
+        @media #{$md,$xs} {
+            gap: 50px;
+            grid-template-columns: 1fr ;
+        }
+    }
+    
+    &-img {
+        height: 600px;
+        border-radius: 22px;
+
+        @media #{$xs} {
+            height: 400px;
+        }
+
+        @media #{$sm} {
+            height: 500px;
+        }
+    }
+}
+
+
+/* 
+    faqs-2-end
+*/

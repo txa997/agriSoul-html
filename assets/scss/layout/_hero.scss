@@ -221,13 +221,33 @@
 /* 
     hero-2-start
 */
-.as-hero-2 {
-    &-content {
-        margin-top: 200px;
 
-        @media #{$md,$xs} {
-            margin-top: 100px;
+.as-hero-2 {
+    &-area {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr 1.43fr;
+        padding-left: 80px;
+        align-items: center;
+    
+        @media #{$xl,$lg,} {
+            padding-left: 30px;
+            grid-template-columns: 1fr 1fr;
         }
+        
+        @media #{$md,$xs} {
+            padding-left: 20px;
+            padding-right: 20px;
+            grid-template-columns: 1fr ;
+        }
+    }
+
+    &-content {
+        margin-top: 90px;
+
 
         .hero-title {
             font-size: 72px;
