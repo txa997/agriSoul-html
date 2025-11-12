@@ -467,7 +467,7 @@ var asServices1bgImg = gsap.timeline({
 		toggleActions: "play none none reverse",
 		start: "top 90%",
 		end: "top 20%",
-		scrub: true,
+		scrub: 1,
 		markers: false,
 	}
 })
@@ -494,6 +494,22 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
 	})
 }
 
+
+// choose-2-bg-img-animation
+var asChoose1bgImg = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".as-about-2-bg-img",
+		toggleActions: "play none none reverse",
+		start: "top 80%",
+		end: "top 20%",
+		scrub: 1,
+		markers: false,
+	}
+})
+
+asChoose1bgImg.from(".as-about-2-bg-img img", {
+	yPercent: 100,
+})
 
 
 /* 

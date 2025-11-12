@@ -212,6 +212,12 @@
             }
         }
 
+        .as-pr-btn-1 {
+            &:hover {
+                background-color: #FEF4DB;
+                color: var(--as-clr-h-2);
+            }
+        }
     }
 
 
@@ -239,6 +245,24 @@
         .main-img {
             height: 294px;
             border-radius: 12px;
+            position: relative;
+
+            img {
+                transition: var(--as-cube-1);
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: .3;
+                transform: translateX(-100%);
+                transition: .3s;
+            }
         }
 
         .main-icon {
@@ -263,6 +287,29 @@
             @media #{$xl,$lg,$md,$xs} {
                 font-size: 22px;
             }
+
+
+            a {
+                width: 100%;
+                display: inline !important;
+                background-position-y: 0px;
+                background-repeat: no-repeat;
+                background-size: 0 100%;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                background-image: linear-gradient(transparent calc(100% - 1px), currentColor 2px);
+                -webkit-transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+                transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+            }
+
+
+            &:hover {
+                a {
+                    color: inherit;
+                    background-size: 100% 100%;
+                }
+            }
         }
 
         .disc {
@@ -270,8 +317,40 @@
             max-width: 424px;
             display: inline-block;
         }
+
+        .as-text-btn-1 {
+            &:hover {
+                color: var(--as-clr-h-3);
+            }
+        }
+
+        &:hover {
+            .main-img {
+                &::after {
+                    animation: asB1shadowKf .6s;
+                }
+                img {
+                    transform: scale(103%);
+                }
+            }
+
+            .main-icon {
+                img {
+                    animation: bounce2 1s;
+                }
+            }
+        }
+
+
     }
     
+}
+
+
+@keyframes asB1shadowKf {
+    to {
+        transform: translateX(100%);
+    }
 }
   
 /* 

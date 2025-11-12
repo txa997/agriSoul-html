@@ -37,6 +37,13 @@
     &:is(.active) {
         bottom: 2.5%;
     }
+
+
+    &:is(.has-home-2) {
+        border: 1px solid rgb(237 221 94 / 20%);
+        box-shadow: 1.782px 0.908px 32.2px 2.8px rgb(237 221 94 / 40%);
+        color: var(--as-clr-h-3);
+    }
 }
 
 

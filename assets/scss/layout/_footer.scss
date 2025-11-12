@@ -342,6 +342,13 @@
 .as-footer-1-area {
     &:is(.has-footer-2) {
         background-color: #25170F;
+
+
+        .as-footer-1-newsletter-form .form-btn {
+            &:hover {
+                background-color: var(--as-clr-h-3);
+            }
+        }
     }
 }
 /* 

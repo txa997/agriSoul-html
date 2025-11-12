@@ -363,6 +363,17 @@
         display: grid;
         grid-template-columns: 1fr 1.5fr;
         padding-left: 80px;
+
+        @media #{$xl,$lg} {
+            padding-left: 30px;
+            grid-template-columns: 1fr 1.1fr;
+        }
+
+        @media #{$md,$xs} {
+            padding-left: 20px;
+            grid-template-columns: 1fr;
+            padding-right: 20px;
+        }
     }
     &-wrap {
         display: flex;
