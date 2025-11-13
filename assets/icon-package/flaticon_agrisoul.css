@@ -1,0 +1,131 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_agrisoul";
+    src: url("./flaticon_agrisoul.woff2?3d87de1c0143e423ce831d16f96d3911") format("woff2"),
+url("./flaticon_agrisoul.woff?3d87de1c0143e423ce831d16f96d3911") format("woff"),
+url("./flaticon_agrisoul.eot?3d87de1c0143e423ce831d16f96d3911#iefix") format("embedded-opentype"),
+url("./flaticon_agrisoul.ttf?3d87de1c0143e423ce831d16f96d3911") format("truetype"),
+url("./flaticon_agrisoul.svg?3d87de1c0143e423ce831d16f96d3911#flaticon_agrisoul") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_agrisoul !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-arrow:before {
+    content: "\f101";
+}
+.flaticon-earth:before {
+    content: "\f102";
+}
+.flaticon-agriculture:before {
+    content: "\f103";
+}
+.flaticon-gardening-tool:before {
+    content: "\f104";
+}
+.flaticon-vegetable:before {
+    content: "\f105";
+}
+.flaticon-vegan:before {
+    content: "\f106";
+}
+.flaticon-wellness:before {
+    content: "\f107";
+}
+.flaticon-milk:before {
+    content: "\f108";
+}
+.flaticon-right-up:before {
+    content: "\f109";
+}
+.flaticon-up-right-arrow:before {
+    content: "\f10a";
+}
+.flaticon-up-right-arrow-1:before {
+    content: "\f10b";
+}
+.flaticon-up-right-arrow-2:before {
+    content: "\f10c";
+}
+.flaticon-carrot:before {
+    content: "\f10d";
+}
+.flaticon-potato:before {
+    content: "\f10e";
+}
+.flaticon-star:before {
+    content: "\f10f";
+}
+.flaticon-view:before {
+    content: "\f110";
+}
+.flaticon-right-up-1:before {
+    content: "\f111";
+}
+.flaticon-share:before {
+    content: "\f112";
+}
+.flaticon-organic:before {
+    content: "\f113";
+}
+.flaticon-avocado:before {
+    content: "\f114";
+}
+.flaticon-phone:before {
+    content: "\f115";
+}
+.flaticon-square:before {
+    content: "\f116";
+}
+.flaticon-tag-black-shape:before {
+    content: "\f117";
+}
+.flaticon-flower:before {
+    content: "\f118";
+}
+.flaticon-shape:before {
+    content: "\f119";
+}
+.flaticon-asterisk:before {
+    content: "\f11a";
+}
+.flaticon-polygon:before {
+    content: "\f11b";
+}
+.flaticon-egg:before {
+    content: "\f11c";
+}
+.flaticon-facebook:before {
+    content: "\f11d";
+}
+.flaticon-linkedin:before {
+    content: "\f11e";
+}
+.flaticon-instagram:before {
+    content: "\f11f";
+}
+.flaticon-twitter:before {
+    content: "\f120";
+}
+.flaticon-down-chevron:before {
+    content: "\f121";
+}
+

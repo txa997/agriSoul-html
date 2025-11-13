@@ -406,6 +406,146 @@
 
 
 /* 
+    header-3-start
+*/
+.as-header-3 {
+    &-area {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 12px;
+        padding-right: 24px;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        display: inline-flex;
+        max-width: 180px;
+        height: 65px;
+        background: #fff;
+        border-radius: 0 0 16px 0;
+        padding-right: 25px;
+        position: relative;
+
+        .bg-radius-1 {
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            * {
+                fill: #fff;
+            }
+        }
+
+        .bg-radius-2 {
+            position: absolute;
+            top: 0;
+            left: 100%;
+
+            * {
+                fill: #fff;
+            }
+        }
+    }
+    
+    &-action-link {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        .as-pr-btn-3 {
+            background: var(--as-clr-pr-3);
+            padding: 9px 20px;
+
+            @media #{$xs} {
+                display: none;
+            }
+
+            @media #{$sm} {
+                display: inline-flex;
+            }
+        }
+
+        .as-offcanvas-btn-1 {
+            @media #{$over,$xxxl,$xxl,$xl} {
+                display: none;
+            }
+        }
+
+        .as-search-btn-3 {
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+}
+
+.as-main-navigation {
+    &:is(.has-header-3) {
+        margin-right: auto;
+
+        .navbar-nav {
+            gap: 4px;
+            li {
+                a {
+                    font-family: var(--as-font-2);
+                    color: #fff;
+                    background: rgb(9 39 2 / 40%);
+                    border-radius: 4px;
+                    padding: 10px 22px;
+                }
+
+                &:is(.dropdown) {
+                    > a {
+                        padding-right: 37px;
+
+                        &::before {
+                            content: "\f103";
+                            font-size: 12px;
+                            right: 20px;
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    li {
+                        a {
+                            background: transparent;
+                            color: var(--as-clr-h-2);
+                        }
+
+                        &:hover {
+                            > a {
+                                transform: unset;
+                                background: var(--as-clr-pr-3);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* 
+    header-3-end
+*/
+
+
+/* 
     sticky-header-css-start
 */
 

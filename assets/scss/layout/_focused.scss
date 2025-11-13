@@ -330,3 +330,182 @@
 /* 
     focused-2-end
 */
+/* 
+    focused-3-start
+*/
+.as-focused-3 {
+    &-area {
+        margin-top: -168px;
+        position: relative;
+        z-index: 2;
+
+        @media #{$lg,$md,$xs} {
+            margin-top: 60px;
+        }
+    }
+
+    &-wrap {
+        margin-left: -168px;
+        margin-right: -168px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 25px;
+
+        @media #{$xxxl,$xxl,$xl} {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        @media #{$lg} {
+            margin-left: 0px;
+            margin-right: 0px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media #{$md,$xs} {
+            margin-left: 0px;
+            margin-right: 0px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media #{$xs} {
+            margin-left: 0px;
+            margin-right: 0px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    &-item {
+        background: rgb(255 255 255 / 64%);
+        border-radius: 10px;
+        padding: 32px 32px;
+
+        position: relative;
+        z-index: 1;
+
+        
+        @media #{$xxxl,$xxl,$xl,$lg,$md,$xs} {
+            padding: 32px 20px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            padding: 1px;
+            background: linear-gradient(95deg, #DCFF87 0%, #FEFCF0 100%);
+            z-index: -1;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+        }
+
+        .icon-elm {
+            padding-top: 14px;
+            padding-left: 14px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 30px;
+
+            &::after {
+                content: "";
+                width: 48px;
+                height: 48px;
+                background: linear-gradient(101.67deg, #E6FFA8 0%, rgba(252, 229, 146, 0.14) 100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: 50%;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .disc {
+            font-size: 16px;
+        }
+    }
+
+    &-item {
+        &-bg {
+            background: #fff;
+            border-radius: 16px;
+            padding: 12px;
+            position: relative;
+            z-index: 1;
+
+            .bg-radius {
+                position: absolute;
+                top: 140px;
+                left: calc(100% - 1px);
+
+                * {
+                    fill: #fff;
+                }
+
+                @media #{$lg,$md,$xs} {
+                    display: none;
+                }
+            }
+
+            .bg-radius-2 {
+                position: absolute;
+                top: 140px;
+                left: -26px;
+            
+                * {
+                    fill: #fff;
+                }
+
+                @media #{$lg,$md,$xs} {
+                    display: none;
+                }
+            }
+
+            .bg-radius-3 {
+                position: absolute;
+                top: 140px;
+                left: calc(100% - 1px);
+            
+                * {
+                    fill: #fff;
+                }
+
+                @media #{$lg,$md,$xs} {
+                    display: none;
+                }
+            }
+
+            &-2 {
+                background: linear-gradient(157.14deg, rgba(230, 255, 168, 0.8) 14.83%, rgba(252, 229, 146, 0) 82.03%);
+                border-radius: 12px;
+                padding: 6px;
+            }
+
+            &:nth-child(even) {
+                .as-focused-3-item-bg-2 {
+                    background: linear-gradient(324.14deg, rgba(230, 255, 168, 0.8) 14.83%, rgba(252, 229, 146, 0) 82.03%);
+                }
+
+                .as-focused-3-item::before {
+                    background: linear-gradient(-45deg, #DCFF87 0%, #FEFCF0 100%);
+                }
+            }
+        }
+    }
+}
+
+/* 
+    focused-3-end
+*/

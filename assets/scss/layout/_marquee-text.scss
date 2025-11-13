@@ -1,0 +1,51 @@
+/* 
+    marquee-text-3-start
+*/
+.as-marquee-text-3 {
+    &-wrap {
+        display: flex;
+        align-items: center;
+        gap: 66px;
+        margin-right: 66px;
+
+        .text-elm {
+            font-size: 128px;
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 66px;
+            opacity: .3;
+            line-height: 1;
+
+            @media #{$xxxl} {
+                font-size: 110px;
+            }
+            @media #{$xxl} {
+                font-size: 100px;
+            }
+            @media #{$xl} {
+                font-size: 90px;
+            }
+            @media #{$lg} {
+                font-size: 80px;
+            }
+            @media #{$md} {
+                font-size: 70px;
+            }
+            @media #{$xs} {
+                font-size: 50px;
+            }
+            @media #{$sm} {
+                font-size: 60px;
+            }
+        }
+
+
+    }
+}
+
+
+
+/* 
+    marquee-text-3-end
+*/

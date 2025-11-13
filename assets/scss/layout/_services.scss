@@ -357,3 +357,81 @@
     services-2-end
 */
   
+  
+/* 
+    services-3-start
+*/
+.as-services-3 {
+    &-area {
+        background-color: #F8F7F0;
+        margin-left: 12px;
+        margin-right: 12px;
+        border-radius: 16px;
+    }
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 88px;
+    }
+    &-sec-title {
+        .as-sec-title-3 {
+            margin-bottom: 22px;
+        }
+        .sec-disc {
+            margin-bottom: 33px;
+        }  
+    }
+
+    &-slider {
+        &-item {
+            height: 520px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+
+            .content-wrap {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                background-size: 100% 100%;
+                padding: 70px 40px;
+            }
+
+            .icon-elm {
+                width: 110px;
+                height: 110px;
+                display: inline-flex;
+                background-size: 100% 100%;
+                align-items: center;
+                justify-content: center;
+                font-size: 44px;
+                color: #00853A;
+                margin-bottom: 28px;
+            }
+
+            .disc {
+                color: #fff;
+                margin-bottom: 30px;
+            }
+
+            .item-btn {
+                font-size: 30px;
+                color: var(--as-clr-sd-1);
+            }
+        }
+        
+        .swiper-wrapper {
+            .swiper-slide {
+                max-width: 396px;
+            }
+        }
+    }
+}
+
+
+/* 
+    services-3-end
+*/
+  

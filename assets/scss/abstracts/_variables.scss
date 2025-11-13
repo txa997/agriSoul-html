@@ -1,21 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 :root {
   scroll-behavior: inherit;
 
   --as-font-1: "Albert Sans", sans-serif;
   --as-font-2: "Nunito", sans-serif;
+  --as-font-3: "Style Script", cursive;
+  --as-font-4: "Inter", sans-serif;
 
   --as-clr-pr-1: #244f0b;
+  --as-clr-pr-3: #A2DE64;
 
   --as-clr-sd-1: #eddd5e;
 
   --as-clr-h-1: #0a2803;
   --as-clr-h-2: #1c1c1d;
   --as-clr-h-3: #39251A;
+  --as-clr-h-4: #092702;
 
   --as-clr-p-1: #5f5f5f;
+  --as-clr-p-2: #595D58;
 
   --as-cube-1: cubic-bezier(0.26, 1.22, 0.63, 1.05) 0.35s;
   --as-cube-2: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);

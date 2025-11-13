@@ -1,0 +1,157 @@
+$flaticon_agrisoul-font: "flaticon_agrisoul";
+
+@font-face {
+    font-family: $flaticon_agrisoul-font;
+    src: url("./flaticon_agrisoul.woff2?3d87de1c0143e423ce831d16f96d3911") format("woff2"),
+url("./flaticon_agrisoul.woff?3d87de1c0143e423ce831d16f96d3911") format("woff"),
+url("./flaticon_agrisoul.eot?3d87de1c0143e423ce831d16f96d3911#iefix") format("embedded-opentype"),
+url("./flaticon_agrisoul.ttf?3d87de1c0143e423ce831d16f96d3911") format("truetype"),
+url("./flaticon_agrisoul.svg?3d87de1c0143e423ce831d16f96d3911#flaticon_agrisoul") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_agrisoul !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_agrisoul-map: (
+    "arrow": "\f101",
+    "earth": "\f102",
+    "agriculture": "\f103",
+    "gardening-tool": "\f104",
+    "vegetable": "\f105",
+    "vegan": "\f106",
+    "wellness": "\f107",
+    "milk": "\f108",
+    "right-up": "\f109",
+    "up-right-arrow": "\f10a",
+    "up-right-arrow-1": "\f10b",
+    "up-right-arrow-2": "\f10c",
+    "carrot": "\f10d",
+    "potato": "\f10e",
+    "star": "\f10f",
+    "view": "\f110",
+    "right-up-1": "\f111",
+    "share": "\f112",
+    "organic": "\f113",
+    "avocado": "\f114",
+    "phone": "\f115",
+    "square": "\f116",
+    "tag-black-shape": "\f117",
+    "flower": "\f118",
+    "shape": "\f119",
+    "asterisk": "\f11a",
+    "polygon": "\f11b",
+    "egg": "\f11c",
+    "facebook": "\f11d",
+    "linkedin": "\f11e",
+    "instagram": "\f11f",
+    "twitter": "\f120",
+    "down-chevron": "\f121",
+);
+
+.flaticon-arrow:before {
+    content: map-get($flaticon_agrisoul-map, "arrow");
+}
+.flaticon-earth:before {
+    content: map-get($flaticon_agrisoul-map, "earth");
+}
+.flaticon-agriculture:before {
+    content: map-get($flaticon_agrisoul-map, "agriculture");
+}
+.flaticon-gardening-tool:before {
+    content: map-get($flaticon_agrisoul-map, "gardening-tool");
+}
+.flaticon-vegetable:before {
+    content: map-get($flaticon_agrisoul-map, "vegetable");
+}
+.flaticon-vegan:before {
+    content: map-get($flaticon_agrisoul-map, "vegan");
+}
+.flaticon-wellness:before {
+    content: map-get($flaticon_agrisoul-map, "wellness");
+}
+.flaticon-milk:before {
+    content: map-get($flaticon_agrisoul-map, "milk");
+}
+.flaticon-right-up:before {
+    content: map-get($flaticon_agrisoul-map, "right-up");
+}
+.flaticon-up-right-arrow:before {
+    content: map-get($flaticon_agrisoul-map, "up-right-arrow");
+}
+.flaticon-up-right-arrow-1:before {
+    content: map-get($flaticon_agrisoul-map, "up-right-arrow-1");
+}
+.flaticon-up-right-arrow-2:before {
+    content: map-get($flaticon_agrisoul-map, "up-right-arrow-2");
+}
+.flaticon-carrot:before {
+    content: map-get($flaticon_agrisoul-map, "carrot");
+}
+.flaticon-potato:before {
+    content: map-get($flaticon_agrisoul-map, "potato");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_agrisoul-map, "star");
+}
+.flaticon-view:before {
+    content: map-get($flaticon_agrisoul-map, "view");
+}
+.flaticon-right-up-1:before {
+    content: map-get($flaticon_agrisoul-map, "right-up-1");
+}
+.flaticon-share:before {
+    content: map-get($flaticon_agrisoul-map, "share");
+}
+.flaticon-organic:before {
+    content: map-get($flaticon_agrisoul-map, "organic");
+}
+.flaticon-avocado:before {
+    content: map-get($flaticon_agrisoul-map, "avocado");
+}
+.flaticon-phone:before {
+    content: map-get($flaticon_agrisoul-map, "phone");
+}
+.flaticon-square:before {
+    content: map-get($flaticon_agrisoul-map, "square");
+}
+.flaticon-tag-black-shape:before {
+    content: map-get($flaticon_agrisoul-map, "tag-black-shape");
+}
+.flaticon-flower:before {
+    content: map-get($flaticon_agrisoul-map, "flower");
+}
+.flaticon-shape:before {
+    content: map-get($flaticon_agrisoul-map, "shape");
+}
+.flaticon-asterisk:before {
+    content: map-get($flaticon_agrisoul-map, "asterisk");
+}
+.flaticon-polygon:before {
+    content: map-get($flaticon_agrisoul-map, "polygon");
+}
+.flaticon-egg:before {
+    content: map-get($flaticon_agrisoul-map, "egg");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon_agrisoul-map, "facebook");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon_agrisoul-map, "linkedin");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon_agrisoul-map, "instagram");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_agrisoul-map, "twitter");
+}
+.flaticon-down-chevron:before {
+    content: map-get($flaticon_agrisoul-map, "down-chevron");
+}
