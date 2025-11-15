@@ -286,6 +286,19 @@
     about-3-start
 */
 .as-about-3 {
+
+    &-bg-illus {
+        width: 11%;
+        position: absolute;
+        right: -60px;
+        top: 20%;
+        z-index: -1;
+
+        @media #{$lg,$md,$xs} {
+            display: none;   
+        }
+    }
+
     &-wrap {
         gap: 80px;
         display: grid;

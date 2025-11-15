@@ -1,0 +1,143 @@
+/* 
+    products-showcase-3-start
+*/
+.as-products-showcase-3 {
+    &-sec-title {
+        font-size: 140px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 45px;
+
+        span {
+            &:nth-child(1) {
+                color: var(--as-clr-sd-1);
+            }
+            &:nth-child(2) {
+                align-self: center;
+                margin-left: 130px;
+            }
+        }
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+
+
+    &-item {
+        background: rgb(255 153 58 / 8%);
+        border-radius: 8px;
+        padding: 36px 36px;
+        position: relative;
+        z-index: 1;
+
+        .bg-shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -2;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 74px;
+            height: 11px;
+            background: #092702;
+            opacity: 0.64;
+            filter: blur(14.5px);
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .img-elm {
+            width: 160px;
+            height: 160px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+
+        .disc {
+            font-size: 16px;
+            margin-bottom: 60px;
+        }
+        
+
+
+        &:nth-child(2) {
+            background: rgb(122 205 1 / 8%);
+
+            .bg-shape *{
+                fill: #7ACD01;
+            }
+        }
+
+        &:nth-child(3) {
+            background: rgb(186 74 165 / 8%);
+
+            .bg-shape *{
+                fill: #BA4AA5;
+            }
+        }
+
+        &:nth-child(4) {
+            background: rgb(246 196 5 / 8%);
+
+            .bg-shape *{
+                fill: #F6C405;
+            }
+        }
+
+        &:nth-child(5) {
+            background: rgb(173 212 133 / 8%);
+
+            .bg-shape *{
+                fill: #ADD485;
+            }
+        }
+
+        &:nth-child(6) {
+            background: rgb(255 163 37 / 8%);
+
+            .bg-shape *{
+                fill: #FFA325;
+            }
+        }
+
+        &:nth-child(7) {
+            background: rgb(203 3 3 / 8%);
+
+            .bg-shape *{
+                fill: #CB0303;
+            }
+        }
+
+        &:nth-child(8) {
+            background: rgb(240 166 95 / 8%);
+
+            .bg-shape *{
+                fill: #F0A65F;
+            }
+        }
+    }
+
+}
+/* 
+    products-showcase-3-end
+*/

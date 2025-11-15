@@ -664,7 +664,25 @@ if ($('.as_t2_preview_slider_active').length) {
 	});
   
 }
-  
+ 
+
+/* 
+	services-3-slider-function
+*/
+if ($('.as_s3_slider').length) {
+	var as_s3_slider = new Swiper(".as_s3_slider", {
+		loop: true,
+		speed: 400,
+		spaceBetween: 28,
+		slidesPerView: "auto",
+
+		// autoplay: {
+		// 	delay: 5000,
+		// },
+
+	});
+
+}
 
 //	services-1-tabs-hover-change
 document.querySelectorAll('.as-services-1-tabs-btn .nav-link').forEach(link => {
